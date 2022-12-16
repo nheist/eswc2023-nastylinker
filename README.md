@@ -1,3 +1,21 @@
+# ESWC 2023 - NASTyLinker: NIL-Aware Scalable Transformer-based Entity Linking
+
+The code for running NASTyLinker has been integrated into the CaLiGraph extraction framework,
+as this is the easiest way to access the LISTING dataset. The modifications implemented by the authors
+can be found in `impl.subject_entity.entity_disambiguation` (contains datasets, matchers, evaluators).
+In addition to that, the notebook `ESWC2023-NASTyLinker.ipynb` contains the code for generating the
+figures of the paper and the results of the qualitative analysis.
+
+For running the experiments, the authors provide the two scripts `evaluate_entity_disambiguation.py`
+(for running single matchers like NASTyLinker) and `tune_entity_disambiguation.py` (for finding the best
+hyperparameters for the clustering matchers). Results are logged under `logs/ED/` and can best be viewed
+with Tensorboard (contained in dev-dependencies). Matchers results have to be created in the correct order
+(i.e., when intending to run NASTyLinker, results from a Bi-Encoder and potentially Cross-Encoder need
+to be generated first). The first run of the framework will take a considerable amount of time,
+as caches for CaLiGraph are initialized and the LISTING dataset is prepared (see the original README
+from CaLiGraph below for further instructions on how to setup the system).
+
+
 # CaLiGraph
 **A Large Semantic Knowledge Graph from Wikipedia Categories and Listings**
 

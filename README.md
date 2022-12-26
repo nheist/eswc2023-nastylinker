@@ -17,7 +17,7 @@ from CaLiGraph below for further instructions on how to setup the system).
 
 ## LISTING Extraction Results
 
-The predictions for the LISTING dataset can be accessed [here](TODO). The file is in json format and contains a list of entities (which may be known or NIL) with the mentions that have been identified for them. The fields are as follows:
+The predictions for the LISTING dataset can be accessed [here](https://zenodo.org/record/7484308#.Y6nLHC8w0mY). The file is in json format and contains a list of entities (which may be known or NIL) with the mentions that have been identified for them. The fields are as follows:
 
 ```
 idx: Index of the entity

@@ -16,6 +16,40 @@ as caches for CaLiGraph are initialized and the LISTING dataset is prepared (see
 from CaLiGraph below for further instructions on how to setup the system).
 
 
+## Configurations of the Paper Results
+
+| *NILK*     |$\tau_m$|$\tau_e$|$\tau_a$|
+|------------|--------|--------|--------|
+|*No Reranking*|  -   |    -   |    -   |
+|Bottom-Up   |   0.9  |  0.9   |    -   |
+|Majority    |   0.85 |  0.8   |    -   |
+|NASTyLinker |   0.8  |  0.85  |  0.75  |
+|*Mention Reranking*|-|    -   |    -   |
+|Bottom-Up   |   0.8  |  0.9   |    -   |
+|Majority    |   0.85 |  0.8   |    -   |
+|NASTyLinker |   0.8  |  0.8   |  0.75  |
+|*Entity Reranking*|- |    -   |    -   |
+|Bottom-Up   |   0.9  |  0.9   |    -   |
+|Majority    |   0.85 |  0.75  |    -   |
+|NASTyLinker |   0.8  |  0.9   |  0.75  |
+|*Full Reranking*| -  |    -   |    -   |
+|Bottom-Up   |  0.8   |  0.9   |    -   |
+|Majority    |  0.85  |  0.75  |    -   |
+|NASTyLinker |  0.8   |  0.9   |  0.75  |
+
+
+| *LISTING*  |$\tau_m$|$\tau_e$|$\tau_a$|
+|------------|--------|--------|--------|
+|*No Reranking*|  -   |    -   |    -   |
+|Bottom-Up   |  0.9   |  0.9   |    -   |
+|Majority    |  0.85  |  0.8   |    -   |
+|NASTyLinker |  0.8   |  0.85  |  0.75  |
+|*Entity Reranking*|- |    -   |    -   |
+|Bottom-Up   |  0.9   |  0.85  |    -   |
+|Majority    |  0.9   |  0.8   |    -   |
+|NASTyLinker |  0.9   |  0.85  |  0.8   |
+
+
 # CaLiGraph
 **A Large Semantic Knowledge Graph from Wikipedia Categories and Listings**
 

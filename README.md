@@ -15,6 +15,20 @@ to be generated first). The first run of the framework will take a considerable 
 as caches for CaLiGraph are initialized and the LISTING dataset is prepared (see the original README
 from CaLiGraph below for further instructions on how to setup the system).
 
+## LISTING Extraction Results
+
+The predictions for the LISTING dataset can be accessed [here](TODO). The file is in json format and contains a list of entities (which may be known or NIL) with the mentions that have been identified for them. The fields are as follows:
+
+```
+idx: Index of the entity
+name: Name of the entity (None, if NIL-entity)
+is_nil: Whether the entity is a NIL-entity
+mentions: (list)
+  page: Name of the page where the mention is found
+  listing: Index of the listing where the mention is found
+  item: Index of the item within the listing where the mention is found
+  text: Mention text
+```
 
 ## Configurations of the Paper Results
 
